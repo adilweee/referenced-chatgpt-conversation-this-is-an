@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 30ecbcb965d8af3dff2b96f044d5d5268ad747be adilweee <adilweee@users.noreply.github.com> 1789042663 +0300	commit (initial): Initial Hatzone local prototype
+30ecbcb965d8af3dff2b96f044d5d5268ad747be 30ecbcb965d8af3dff2b96f044d5d5268ad747be adilweee <adilweee@users.noreply.github.com> 1789042663 +0300	Branch: renamed refs/heads/master to refs/heads/main
+30ecbcb965d8af3dff2b96f044d5d5268ad747be 31e7b597827bc1b3a22f965de62329c38889c0c4 adilweee <adilweee@users.noreply.github.com> 1789044002 +0300	commit: Connect Hatzone to Firebase Authentication and Firestore

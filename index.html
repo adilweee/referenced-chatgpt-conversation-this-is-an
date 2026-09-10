@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatzone — Gerçek hayata bağlan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="local.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Ana menü">
+        <a class="brand" href="#home"><span class="brand-mark">H</span> hatzone</a>
+        <nav class="nav-links">
+          <button class="nav-link active" data-view="home"><span>⌂</span> Bugün</button>
+          <button class="nav-link" data-view="map"><span>⌖</span> Keşfet</button>
+          <button class="nav-link" data-view="games"><span>♟</span> Oyunlar</button>
+          <button class="nav-link" data-view="memories"><span>◉</span> Anılar</button>
+          <button class="nav-link" data-view="profile"><span>☺</span> Profil</button>
+        </nav>
+        <div class="sidebar-footer"><button class="appearance" id="themeButton">◐ Görünümünü değiştir</button><p>Hatzone, ekrandan çok<br />hayatın içinde.</p></div>
+      </aside>
+      <section class="content">
+        <header class="topbar"><div><p class="eyebrow">5 EYLÜL, CUMA</p><h1 id="pageTitle">Günün güzel geçsin, <span>deniz.</span></h1></div><button class="avatar" data-view="profile">D</button></header>
+        <section class="view active" id="home">
+          <section class="hero-card"><div class="hero-copy"><p class="pill">✦ BİRLİKTE DAHA GÜZEL</p><h2>Telefonu bırak,<br /><em>bir anı yaşa.</em></h2><p>Arkadaşlarını çağır, oyunu başlat veya şehirde yeni bir yer keşfet.</p><div class="hero-actions"><button class="primary" data-view="games">Oyun seç <span>→</span></button><button class="soft" data-view="map">Haritayı aç</button></div></div><div class="hero-art"><div class="sun"></div><div class="people p-one">●</div><div class="people p-two">●</div><div class="people p-three">●</div><div class="ground"></div></div></section>
+          <div class="section-heading"><div><p class="eyebrow">SANA YAKIN</p><h2>Bugün ne yapmak istersin?</h2></div><button class="text-button" data-view="map">Tümünü gör →</button></div>
+          <div class="action-grid"><button class="action-card blue" data-view="games"><span class="action-icon">♟</span><strong>Bir oyun başlat</strong><small>Arkadaşlarınla eğlen</small></button><button class="action-card peach" data-view="map"><span class="action-icon">⌖</span><strong>Yeni bir yer bul</strong><small>Şehrini yeniden keşfet</small></button><button class="action-card lavender" data-view="memories"><span class="action-icon">◉</span><strong>Bir anı paylaş</strong><small>Bugününü sakla</small></button></div>
+          <section class="suggestion"><div class="suggestion-icon">✦</div><div><p class="eyebrow">HATZ AI ÖNERİSİ</p><h3>Bugün Kadıköy’de kısa bir yürüyüşe ne dersin?</h3><p>Hava güzel; Moda sahilinde arkadaşlarınla bir oyun turu için ideal.</p></div><button class="soft" data-view="map">Keşfet</button></section>
+        </section>
+        <section class="view" id="map"><div class="section-heading"><div><p class="eyebrow">KEŞFET</p><h2>Şehrin seninle</h2></div><button class="primary" id="addPlace">+ Yer paylaş</button></div><div class="map-layout"><div class="map-canvas"><div class="map-label l-one">Beşiktaş</div><div class="map-label l-two">Kadıköy</div><div class="map-label l-three">Üsküdar</div><button class="pin pin-one">●</button><button class="pin pin-two">●</button><button class="pin pin-three">●</button><div class="map-water">Boğaz</div></div><aside class="place-list"><p class="eyebrow">ARKADAŞLARINDAN</p><article class="place-card"><div class="place-image coffee"></div><div><strong>Walter's Coffee</strong><p>“Sakin ve çok tatlı.”</p><small>Moda · Ece</small></div></article><article class="place-card"><div class="place-image park"></div><div><strong>Yıldız Parkı</strong><p>“Piknik için harika.”</p><small>Beşiktaş · Arda</small></div></article></aside></div></section>
+        <section class="view" id="games"><div class="section-heading"><div><p class="eyebrow">PARTİ OYUNLARI</p><h2>Herkesi bir araya getir</h2><p class="subtle">Bir bağlantı oluştur, arkadaşlarını davet et ve hemen başla.</p></div><button class="primary" id="inviteButton">+ Davet bağlantısı</button></div><div class="game-grid"><article class="game-card yellow"><span>🎭</span><p class="tag">4–10 KİŞİ</p><h3>Kimim Ben?</h3><p>Sor, tahmin et, kahkahayı kap.</p><button class="start-game" data-game="Kimim Ben?">Oyunu başlat →</button></article><article class="game-card pink"><span>🌀</span><p class="tag">3–8 KİŞİ</p><h3>Bir Kelime</h3><p>Hızlı düşün, hızlı anlat.</p><button class="start-game" data-game="Bir Kelime">Oyunu başlat →</button></article><article class="game-card mint"><span>🎲</span><p class="tag">2–12 KİŞİ</p><h3>Cesaret mi?</h3><p>Tanışmak için küçük sorular.</p><button class="start-game" data-game="Cesaret mi?">Oyunu başlat →</button></article></div><section class="ai-game"><div class="suggestion-icon">✦</div><div><p class="eyebrow">HATZ AI</p><h3>Grubunuz için “Kimim Ben?” çok uygun görünüyor.</h3><p>4 kişiyseniz, 10 dakikalık hızlı bir turla başlayın.</p></div></section></section>
+        <section class="view" id="memories"><div class="section-heading"><div><p class="eyebrow">ANILAR</p><h2>Biriktirdiğin güzel şeyler</h2></div><button class="primary" id="memoryButton">+ Anı ekle</button></div><div class="memory-grid"><article class="memory large"><div class="memory-photo photo-one"></div><div><p class="tag">MODA · 31 AĞUSTOS</p><h3>Gün batımına yetiştik.</h3><p>♡ 24 &nbsp; ◌ 4</p></div></article><article class="memory"><div class="memory-photo photo-two"></div><div><p class="tag">BEYOĞLU · 28 AĞUSTOS</p><h3>Uzun bir kahve molası.</h3><p>♡ 12 &nbsp; ◌ 1</p></div></article><article class="memory"><div class="memory-photo photo-three"></div><div><p class="tag">KADIKÖY · 23 AĞUSTOS</p><h3>İlk oyun gecemiz.</h3><p>♡ 31 &nbsp; ◌ 6</p></div></article></div></section>
+        <section class="view" id="profile"><div class="profile-cover"></div><div class="profile-card"><div class="profile-avatar">D</div><button class="soft">Profili düzenle</button><h2>deniz</h2><p>@deniz · İstanbul</p><div class="profile-stats"><div><strong>18</strong><span>Anı</span></div><div><strong>7</strong><span>Oyun</span></div><div><strong>42</strong><span>Arkadaş</span></div></div></div><div class="section-heading compact"><div><p class="eyebrow">SON ANILAR</p><h2>deniz'in dünyası</h2></div></div></section>
+      </section>
+      <nav class="bottom-nav"><button class="active" data-view="home">⌂<span>Bugün</span></button><button data-view="map">⌖<span>Keşfet</span></button><button data-view="games">♟<span>Oyunlar</span></button><button data-view="memories">◉<span>Anılar</span></button><button data-view="profile">☺<span>Profil</span></button></nav>
+    </main>
+    <dialog id="dialog"><button class="close">×</button><div id="dialogContent"></div></dialog><div class="toast" id="toast"></div><script type="module" src="main.js"></script>
+  </body>
+</html>
